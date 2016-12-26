@@ -4,6 +4,10 @@ Loads data back into approximately the same structure.
 
 # Installation
 
+## Support files
+
+Copy the provided invVolumes1.csv and invVolumes2.csv into the sde folder.
+
 ## macOS
 
 Remember to install libyaml first, and adjust the include path for clang:
@@ -19,6 +23,23 @@ or
 ## PostgreSQL
 
 For PostgreSQL, you will also need to install `psycopg2`.
+
+# Operation
+
+Run
+
+    python Load.py «engine»
+
+Where «engine» is one of:
+
+ - postgres
+ - postgresschema
+ - mysql
+ - mssql
+ - oracle
+ - sqlite3
+
+See the [SQL Alchemy docs](http://docs.sqlalchemy.org/en/latest/core/engines.html#supported-databases) for more details.
 
 # Database Engines
 
